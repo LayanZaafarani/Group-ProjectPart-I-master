@@ -21,9 +21,9 @@ public class Line extends Edge {
     @Override
     public void displayInfo() {
         System.out.println("Office No. " 
-        + (char)(Integer.parseInt(source.getLabel().substring(1))+64) 
+        + (char)(Integer.parseInt(destination.getLabel().substring(1))+64)
         + " - Office No. " 
-        + (char)(Integer.parseInt(destination.getLabel().substring(1))+64) 
+        + (char)(Integer.parseInt(source.getLabel().substring(1))+64)
         + " : Line lenght: " + ILength);
     }
 }

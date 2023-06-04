@@ -17,11 +17,11 @@ public class PhoneNetworkApp {
         BluePrintsGraph PhLNetwork2 = new BluePrintsGraph();
 
         // read graph from file
-        // File f = new File("DI.txt");
-        // PhLNetwork2.readGraphFromFile(f);
+        File f = new File("DI.txt");
+        PhLNetwork2.readGraphFromFile(f);
 
         // make graph with number of vertices and number of edges
-        PhLNetwork2.makeGraph(20, 20);
+        // PhLNetwork2.makeGraph(20, 20);
 
         // print the graph
         PhLNetwork2.printGraph();

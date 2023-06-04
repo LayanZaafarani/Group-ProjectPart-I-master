@@ -80,7 +80,7 @@ public class MHPrimAlg extends MSTAlgorithm {
             Vertex D = mn.getVertex();
             
             //Object line .
-            Line line = new Line(mn.getParent(), mn.getVertex(), mn.getKey());
+            Line line = new Line(mn.getVertex(), mn.getParent(), mn.getKey());
             
             //add the object to the MST.
             MSTResultList.set(cout, line);
