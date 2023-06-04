@@ -107,5 +107,4 @@ public class MHPrimAlg extends MSTAlgorithm {
         }
         System.out.println("The cost of designed phone network: " + minCost + "\n");
     }
-    // Tools | Templates.
 }

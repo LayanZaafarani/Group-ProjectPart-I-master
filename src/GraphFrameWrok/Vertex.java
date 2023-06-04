@@ -15,14 +15,13 @@ public class Vertex {
     public boolean isVisited;
     public List<Edge> adjacentVertices;
    
-
+    // each vertex has a label "in String" and a boolean isVisited and a edge list with all adjacent vertices 
     public Vertex(String label) {
         this.label = label;
         this.isVisited = false;
         this.adjacentVertices = new ArrayList<>();
     }
 
-   
     public String getLabel() {
         return label;
     }
@@ -72,6 +71,7 @@ public class Vertex {
         return label;
     }
 
+    // abstract method
     public void displayInfo() {
         
     }

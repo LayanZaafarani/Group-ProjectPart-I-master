@@ -43,7 +43,7 @@ public class KruskalAlg extends MSTAlgorithm {
         // allocate memory for creating subsets as the number of vertices
         Subset subsets[] = new Subset[noVertices];
 
-        // create subsets for every vertex as single elements subset
+        // create subsets for every vertex as single element subset
         for (int i = 0; i < noVertices; i++) {
             subsets[i] = new Subset(i, 0);
         }
@@ -63,7 +63,7 @@ public class KruskalAlg extends MSTAlgorithm {
                 // save the edge into the MST result list
                 MSTResultList.add(nextEdge);
 
-                // merge the two subsets of source and destination
+                // merge the two subsets of source and destination to make them have the same parent
                 union(subsets, x, y);
 
                 // increment number of edges found
@@ -75,7 +75,7 @@ public class KruskalAlg extends MSTAlgorithm {
         }
     }
 
-    // return number of vertex as the vertex labels are in strings
+    // return number of vertex from the vertex's label
     private static int getVertexNo(Vertex v) {
         if (v.getLabel().charAt(0) == 'O') {
             return Integer.parseInt(v.getLabel().substring(1)) - 1;

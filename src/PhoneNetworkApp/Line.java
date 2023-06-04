@@ -26,7 +26,5 @@ public class Line extends Edge {
         + (char)(Integer.parseInt(destination.getLabel().substring(1))+64) 
         + " : Line lenght: " + ILength);
     }
-
-
 }
     

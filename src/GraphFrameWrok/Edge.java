@@ -10,7 +10,7 @@ public class Edge {
     public Vertex destination;
     public int weight;
 
-
+    // edges has a source vertex and a destination vertex and a weight
     public Edge(Vertex source, Vertex destination, int weight) {
         this.source = source;
         this.destination = destination;
@@ -41,6 +41,7 @@ public class Edge {
         this.weight = weight;
     }
 
+    // abstract method
     public void displayInfo() {
         
     }

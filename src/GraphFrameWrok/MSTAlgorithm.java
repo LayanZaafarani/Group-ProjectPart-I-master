@@ -17,20 +17,5 @@ public abstract class MSTAlgorithm {
 
     // The abstract function to display the minimum spanning tree
     public abstract void displayResultingMST();
-    
-    public MHPrimAlg MSTPrim(Graph graph) {
-       
-        return new MHPrimAlg(graph);
-    }
-
-    // abstract method
-    public void displayInfo(Vertex vertex) {
-        
-    }
-
-   // abstract method
-    public void displayInfo(Edge edge) {
-       
-    }
 
 }
